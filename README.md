@@ -84,6 +84,27 @@ output/
 └── run_summary.json       # ok / skipped / failed counts for the batch
 ```
 
+A converted document looks like this (illustrative):
+
+```markdown
+# Quarterly Report
+
+## Revenue
+
+Revenue grew 18% year over year, driven by the document AI segment.
+
+<table>
+  <tr><th>Quarter</th><th>Revenue</th><th>Growth</th></tr>
+  <tr><td>Q1</td><td>$1.2M</td><td>+12%</td></tr>
+  <tr><td>Q2</td><td>$1.4M</td><td>+18%</td></tr>
+</table>
+
+![](quarterly_report.assets/page3_120_340_880_620.jpg)
+```
+
+Tables stay as HTML so merged cells and cross-page fragments survive. Figures are
+cropped from the rendered page and linked from the Markdown.
+
 ---
 
 ## Quick start: Google Colab (free T4)
