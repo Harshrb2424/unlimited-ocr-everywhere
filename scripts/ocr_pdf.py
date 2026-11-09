@@ -202,18 +202,21 @@ def load_postprocessor():
     return module.convert
 
 
-def collect_inputs(paths: list[str]) -> list[Path]:
+def collect_inputs(paths: list[str], exclude: Path | None = None) -> list[Path]:
     files: list[Path] = []
     for raw in paths:
         path = Path(raw).expanduser().resolve()
         if path.is_dir():
-            files.extend(
-                p
-                for p in path.rglob("*")
-                if p.is_file()
-                and p.suffix.lower() in SUPPORTED_EXTS
-                and not p.name.startswith("~$")
-            )
+            for candidate in path.rglob("*"):
+                if not candidate.is_file():
+                    continue
+                if candidate.suffix.lower() not in SUPPORTED_EXTS:
+                    continue
+                if candidate.name.startswith("~$"):
+                    continue
+                if exclude and (candidate == exclude or exclude in candidate.parents):
+                    continue
+                files.append(candidate)
         elif path.is_file():
             if path.suffix.lower() not in SUPPORTED_EXTS:
                 print(f"WARNING: skipping unsupported file: {path}")
@@ -486,7 +489,7 @@ def main() -> int:
     output_dir = Path(args.output).expanduser().resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    files = collect_inputs(args.input)
+    files = collect_inputs(args.input, exclude=output_dir)
     if not files:
         print("No supported input files found.", file=sys.stderr)
         return 1
