@@ -382,7 +382,7 @@ The upstream model and code are MIT-licensed. Check the upstream repository and 
 terms. This packaging repo is also MIT.
 
 **Why is the first page slow?**
-Model loading and CUDA graph capture happen once. Later pages reuse the loaded model.
+Model loading and the first forward pass happen once. Later pages reuse the loaded model.
 
 **Why does the free T4 struggle with long books?**
 16 GB of VRAM is the minimum. Each page adds vision tokens and KV cache. Use `CHUNK_PAGES=1` for reliability,
