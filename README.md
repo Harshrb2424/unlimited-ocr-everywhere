@@ -411,6 +411,9 @@ or move to L4/A100/SGLang for long documents.
 ├── docs/                       # install, hardware, Colab, SGLang, FAQ
 ├── assets/                     # banner and social preview
 ├── examples/                   # a tiny sample PDF
+├── archive/                    # original single-notebook version (preserved)
+├── CHANGELOG.md
+├── CITATION.cff
 ├── tools/
 │   ├── build_notebooks.py      # regenerates all notebooks from templates
 │   ├── validate_notebooks.py   # CI: JSON + Python syntax check
