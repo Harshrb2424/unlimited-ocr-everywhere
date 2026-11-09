@@ -1,0 +1,21 @@
+changelog:
+  categories:
+    - title: Notebooks
+      labels:
+        - notebook
+        - enhancement
+    - title: Hardware reports
+      labels:
+        - hardware-report
+    - title: Fixes
+      labels:
+        - bug
+    - title: Documentation
+      labels:
+        - documentation
+    - title: Dependencies
+      labels:
+        - dependencies
+    - title: Other changes
+      labels:
+        - "*"

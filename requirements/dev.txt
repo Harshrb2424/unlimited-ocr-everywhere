@@ -1,0 +1,7 @@
+# Development / CI dependencies.
+-r base.txt
+jupyterlab
+nbformat
+nbconvert
+pyyaml
+ruff

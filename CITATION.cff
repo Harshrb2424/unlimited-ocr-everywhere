@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this packaging project, cite it. If you use the model, cite the original Unlimited OCR Works papers."
+title: "Unlimited OCR Everywhere"
+abstract: >-
+  Self-contained Jupyter notebooks, a batch CLI and an SGLang server guide for
+  running Baidu's Unlimited-OCR-2 on Google Colab T4, Colab Pro L4/A100,
+  Windows/Linux NVIDIA GPUs, CPU-only laptops and Apple Silicon.
+authors:
+  - name: "Unlimited OCR Everywhere contributors"
+type: software
+license: MIT
+repository-code: "https://github.com/__OWNER__/__REPO__"
+url: "https://github.com/__OWNER__/__REPO__"
+keywords:
+  - ocr
+  - document parsing
+  - pdf to markdown
+  - unlimited-ocr
+  - baidu
+  - colab
+  - jupyter
+  - sglang
+  - apple silicon
+  - cpu inference
+references:
+  - type: article
+    title: "Unlimited OCR Works 2"
+    authors:
+      - name: "Baidu ERNIE Team"
+    year: 2026
+    eprint: "2610.39308"
+    archive-prefix: "arXiv"
+    url: "https://arxiv.org/abs/2610.39308"
+  - type: article
+    title: "Unlimited OCR Works"
+    authors:
+      - name: "Baidu ERNIE Team"
+    year: 2026
+    eprint: "2606.23050"
+    archive-prefix: "arXiv"
+    url: "https://arxiv.org/abs/2606.23050"

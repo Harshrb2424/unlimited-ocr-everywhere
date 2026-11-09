@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Upstream Unlimited-OCR
+    url: https://github.com/baidu/Unlimited-OCR
+    about: Model, paper, training code and evaluation utilities by the Baidu ERNIE Team.
+  - name: Model card
+    url: https://huggingface.co/baidu/Unlimited-OCR-2
+    about: Weights, license and model details on Hugging Face.
+  - name: Troubleshooting guide
+    url: https://github.com/__OWNER__/__REPO__/blob/main/docs/TROUBLESHOOTING.md
+    about: Check this before opening a bug report.

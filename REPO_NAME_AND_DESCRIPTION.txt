@@ -1,0 +1,346 @@
+================================================================================
+UNLIMITED OCR EVERYWHERE — REPOSITORY NAMING & LISTING KIT
+================================================================================
+Last updated: 2026-11-09
+Purpose: copy/paste everything GitHub asks for when you publish this repo.
+
+--------------------------------------------------------------------------------
+1. PREFERRED REPOSITORY NAME
+--------------------------------------------------------------------------------
+unlimited-ocr-everywhere
+
+Why this name:
+  - Reads naturally in a URL: github.com/you/unlimited-ocr-everywhere
+  - Contains the exact model family people search for: "unlimited ocr"
+  - The "everywhere" suffix signals the repo's differentiator: every hardware
+    tier, not just the upstream A800 example.
+  - Lowercase and hyphenated, so GitHub, Colab and Markdown links behave.
+
+Alternative names (in order of preference):
+  1. unlimited-ocr-anywhere
+  2. unlimited-ocr-notebooks
+  3. unlimited-ocr-for-everyone
+  4. run-unlimited-ocr
+  5. ocr-everywhere
+
+Avoid:
+  - baidu-unlimited-ocr (implies official affiliation; this is unofficial)
+  - unlimited-ocr-colab (undersells the local/CPU/Apple/SGLang tiers)
+  - best-ocr (spammy, not descriptive)
+
+--------------------------------------------------------------------------------
+2. GITHUB "ABOUT" DESCRIPTION (350-character limit)
+--------------------------------------------------------------------------------
+Run Baidu's Unlimited-OCR-2 anywhere: free Colab T4, Colab Pro L4/A100,
+Windows/Linux NVIDIA PCs, CPU-only laptops, and Apple Silicon. One-click
+notebooks, a batch CLI, and an SGLang server guide for hundred-page documents.
+
+Character count: ~270. Fits with room for a version note if needed.
+
+Shorter variant (for directories with tighter limits):
+  Unlimited-OCR-2 notebooks for Colab T4, L4/A100, NVIDIA PCs, CPU and Apple
+  Silicon. Download, run all, get Markdown from any PDF.
+
+--------------------------------------------------------------------------------
+3. TAGLINE / HERO COPY
+--------------------------------------------------------------------------------
+Primary tagline:
+  One model. Every device. Unlimited pages.
+
+Secondary tagline:
+  Download a notebook, run all, get clean Markdown from any PDF.
+
+One-liner for social posts:
+  Baidu's Unlimited-OCR-2 runs on a free Colab T4, an RTX PC, a CPU laptop, and
+  a Mac. Six notebooks, one output format, no setup archaeology.
+
+Elevator pitch (3 sentences):
+  Unlimited-OCR-2 is a 3B document-parsing model that turns page images into
+  structured Markdown. This repo packages it into six self-contained Jupyter
+  notebooks, one for each realistic hardware tier, plus a batch CLI and an
+  SGLang server path for long documents. Pick the notebook that matches your
+  GPU, click Run all, and get Markdown, raw layout, metadata and cropped
+  figures in a predictable output folder.
+
+--------------------------------------------------------------------------------
+4. GITHUB TOPICS (paste one per line in Settings → Topics)
+--------------------------------------------------------------------------------
+ocr
+unlimited-ocr
+baidu
+document-parsing
+pdf-to-markdown
+document-ai
+vision-language-model
+vlm
+jupyter-notebook
+google-colab
+colab-notebook
+transformers
+sglang
+nvidia
+cuda
+cpu-inference
+apple-silicon
+mps
+deepseek-ocr
+paddleocr
+image-to-text
+table-extraction
+markdown
+python
+
+Tip: keep the first 10-12 topics focused. GitHub search weights exact matches,
+so "unlimited-ocr" and "pdf-to-markdown" are the highest-value ones.
+
+--------------------------------------------------------------------------------
+5. WEBSITE FIELD (optional)
+--------------------------------------------------------------------------------
+https://github.com/YOUR_GITHUB_USERNAME/unlimited-ocr-everywhere#-pick-your-notebook
+
+Or, if you publish a short landing page:
+https://YOUR_DOMAIN/unlimited-ocr-everywhere
+
+--------------------------------------------------------------------------------
+6. SOCIAL PREVIEW (Settings → Social preview)
+--------------------------------------------------------------------------------
+Upload: assets/social-preview.svg exported to a 1280 × 640 PNG
+        (GitHub requires PNG/JPG/GIF for social preview, not SVG).
+
+Title:
+  Unlimited OCR Everywhere
+
+Description / alt text:
+  One model. Every device. Unlimited pages. Notebooks for Colab T4, L4/A100,
+  NVIDIA PCs, CPU laptops and Apple Silicon.
+
+Suggested image text (already in the SVG):
+  BAIDU UNLIMITED-OCR-2
+  Unlimited OCR
+  Everywhere
+  One model. Every device. Unlimited pages.
+  Colab T4 · L4/A100 · NVIDIA PC · CPU · Apple Silicon · SGLang
+
+How to export on macOS:
+  Open assets/social-preview.svg in Safari → File → Export as PDF → open the
+  PDF in Preview → File → Export → PNG → 1280 × 640.
+On Linux:
+  rsvg-convert -w 1280 -h 640 assets/social-preview.svg -o social-preview.png
+On Windows:
+  Open the SVG in Edge → right-click → Save image as → PNG.
+
+--------------------------------------------------------------------------------
+7. README HERO COPY (already in README.md)
+--------------------------------------------------------------------------------
+H1:
+  Unlimited OCR Everywhere
+
+Subtitle:
+  One model. Every device. Unlimited pages.
+  Run Baidu's Unlimited-OCR-2 on a free Colab T4, Colab Pro L4/A100,
+  Windows/Linux NVIDIA PCs, CPU-only laptops, and Apple Silicon.
+  Download one notebook, run all, get clean Markdown from any PDF.
+
+Primary CTA:
+  Open in Colab (T4)
+
+Secondary CTA:
+  Download the local GPU notebook
+
+Trust line:
+  Unofficial community project. Not affiliated with Baidu. Model and upstream
+  code are MIT-licensed by the Baidu ERNIE Team.
+
+--------------------------------------------------------------------------------
+8. RELEASE COPY (v1.0.0)
+--------------------------------------------------------------------------------
+Tag: v1.0.0
+Title: Unlimited OCR Everywhere v1.0.0
+
+Body:
+  Six notebooks, one output format.
+
+  - Colab T4: free, 16 GB, float16, one page per request
+  - Colab L4/A100: BF16, larger chunks, long documents
+  - Local NVIDIA GPU: Windows/Linux, auto device and chunk sizing
+  - Local CPU: experimental float32 fallback
+  - Apple Silicon: experimental MPS path
+  - SGLang server: page-window scheduling for hundred-page books
+
+  Also included: batch CLI (scripts/ocr_pdf.py), environment checker, vendored
+  upstream post-processor, CI that validates every notebook, and issue
+  templates for hardware reports.
+
+  First run downloads ~7 GB of model weights. The practical GPU minimum is
+  12 GB VRAM. CPU and Apple Silicon are labeled experimental on purpose.
+
+  Full notes: README.md
+
+--------------------------------------------------------------------------------
+9. PINNED ISSUE / WELCOME POST
+--------------------------------------------------------------------------------
+Title: Start here: which notebook should I use?
+
+Body:
+  Welcome! This repo packages Unlimited-OCR-2 for six hardware tiers.
+
+  - Free Colab T4 → notebooks/Unlimited_OCR_Colab_T4.ipynb
+  - Colab Pro L4/A100 → notebooks/Unlimited_OCR_Colab_L4_A100.ipynb
+  - Windows/Linux NVIDIA → notebooks/Unlimited_OCR_Local_GPU.ipynb
+  - CPU-only laptop → notebooks/Unlimited_OCR_Local_CPU.ipynb (experimental)
+  - Apple Silicon → notebooks/Unlimited_OCR_Apple_Silicon.ipynb (experimental)
+  - Long docs / production → notebooks/Unlimited_OCR_SGLang_Server.ipynb
+
+  If a notebook works on your machine, please post your GPU/CPU, OS, and the
+  settings that worked in a hardware report issue. That is how the support
+  table gets better.
+
+  If you hit an error, include the notebook name, your hardware, the exact
+  traceback, and whether it happened during install, model loading, or
+  inference. That lets us fix it without guessing.
+
+--------------------------------------------------------------------------------
+10. LAUNCH POST COPY
+--------------------------------------------------------------------------------
+Show HN:
+  Show HN: Unlimited-OCR-2 notebooks for T4, RTX, CPU and Mac
+
+  Baidu's Unlimited-OCR-2 is a 3B document parser with a 6.7 GB BF16 checkpoint.
+  The upstream README targets an A800-80GB and SGLang, which is a high bar if
+  you just want to OCR a PDF.
+
+  I packaged it into six self-contained notebooks:
+  - free Colab T4 (16 GB, float16, one page at a time)
+  - Colab Pro L4/A100 (BF16, larger chunks)
+  - local Windows/Linux NVIDIA (auto device/chunk)
+  - CPU-only (experimental, float32)
+  - Apple Silicon (experimental, MPS)
+  - SGLang server (long documents, streaming)
+
+  Each notebook renders PDFs/images, runs the model, converts the layout stream
+  to Markdown, crops figures, and writes metadata. There is also a batch CLI and
+  an environment checker that tells you which tier fits your machine.
+
+  Honest limits: 12 GB VRAM is the practical GPU minimum, T4 is slow for long
+  books, and CPU/Apple are experimental. The repo says so up front.
+
+  Feedback on hardware combinations is very welcome.
+
+Reddit r/LocalLLaMA:
+  Title: Unlimited-OCR-2 on everything: T4, RTX, CPU, Mac, and SGLang
+
+  Body: (same as Show HN, trimmed; include the notebook table and the 12 GB
+  VRAM caveat; link the hardware report issue.)
+
+X/Twitter:
+  Baidu's Unlimited-OCR-2 now runs on:
+  - free Colab T4
+  - Colab Pro L4/A100
+  - Windows/Linux RTX
+  - CPU-only laptops (experimental)
+  - Apple Silicon (experimental)
+  - SGLang for 100-page books
+
+  Six self-contained notebooks. Run all, get Markdown + figures + metadata.
+  One model. Every device. Unlimited pages.
+  [link]
+
+--------------------------------------------------------------------------------
+11. SEO / SEARCH KEYWORDS
+--------------------------------------------------------------------------------
+Primary:
+  unlimited-ocr-2 notebook
+  unlimited ocr colab
+  unlimited ocr t4
+  baidu unlimited ocr pdf to markdown
+  unlimited ocr local gpu
+  unlimited ocr cpu
+  unlimited ocr apple silicon
+  unlimited ocr sglang
+
+Secondary:
+  pdf to markdown ocr model
+  document parsing vision language model
+  colab t4 ocr notebook
+  rtx 3060 ocr
+  m1 mac ocr model
+  long document ocr benchmark
+  marathon docbench
+  deepseek ocr alternative
+
+Long-tail:
+  how to run unlimited ocr on a laptop
+  unlimited ocr 16gb vram
+  unlimited ocr colab free tier
+  unlimited ocr windows install
+  unlimited ocr pdf to markdown with tables
+
+--------------------------------------------------------------------------------
+12. REPOSITORY SETTINGS CHECKLIST
+--------------------------------------------------------------------------------
+[ ] Name: unlimited-ocr-everywhere
+[ ] Description: paste section 2
+[ ] Website: paste section 5 (optional)
+[ ] Topics: paste section 4
+[ ] Social preview: upload the 1280×640 PNG from section 6
+[ ] Issues: enabled, with the three templates in .github/ISSUE_TEMPLATE/
+[ ] Discussions: enabled (good for "does it work on X?" threads)
+[ ] Wiki: disabled; docs/ is the source of truth
+[ ] Include in search: enabled
+[ ] Releases: create v1.0.0 with the copy in section 8
+[ ] Branch protection on main: require PR + CI (validate-notebooks)
+[ ] Dependabot: enable for pip and GitHub Actions
+[ ] License: MIT (already in LICENSE)
+[ ] About → "Include this repository in the GitHub Archive Program": optional
+[ ] Pin the welcome issue from section 9
+
+--------------------------------------------------------------------------------
+13. NAMING / BRANDING NOTES
+--------------------------------------------------------------------------------
+- Keep "Unlimited OCR" capitalized in prose; keep "unlimited-ocr-everywhere"
+  lowercase in the URL.
+- Always include the "unofficial community project" line near the top. It is
+  both honest and legally safer.
+- Do not use the Baidu logo as the repo logo. The banner uses text only.
+- The model name is "Unlimited-OCR-2" (with the hyphen and the 2). The upstream
+  GitHub repo is "Unlimited-OCR".
+- For citations, use the two BibTeX entries in README.md / CITATION.cff.
+- If you rename the repo later, GitHub redirects the old URL, but Colab badges
+  cached in other people's notebooks will keep working through the redirect.
+
+--------------------------------------------------------------------------------
+14. FILE CHECKLIST FOR A POLISHED REPO
+--------------------------------------------------------------------------------
+[x] README.md with banner, badges, notebook table, quick starts, FAQ
+[x] REPO_NAME_AND_DESCRIPTION.txt (this file)
+[x] LICENSE (MIT)
+[x] CITATION.cff
+[x] CONTRIBUTING.md
+[x] CODE_OF_CONDUCT.md
+[x] SECURITY.md
+[x] .gitignore
+[x] requirements/ (base, gpu, cpu, colab, sglang, dev)
+[x] notebooks/ (six self-contained notebooks)
+[x] scripts/ (CLI, environment check, SGLang launcher)
+[x] vendor/ (upstream post-processor, MIT)
+[x] docs/ (install, hardware, Colab, SGLang, troubleshooting, FAQ)
+[x] assets/ (banner.svg, social-preview.svg)
+[x] examples/ (sample PDF)
+[x] .github/ISSUE_TEMPLATE/ (bug, hardware report, notebook request)
+[x] .github/pull_request_template.md
+[x] .github/workflows/validate-notebooks.yml
+[x] tools/ (build, validate, personalize)
+
+--------------------------------------------------------------------------------
+15. ONE-COMMAND PERSONALIZATION
+--------------------------------------------------------------------------------
+After creating the GitHub repo, run:
+
+  python tools/personalize.py --owner YOUR_GITHUB_USERNAME --repo unlimited-ocr-everywhere
+
+This replaces every __OWNER__ / __REPO__ placeholder in the README, notebooks,
+CITATION.cff and docs, so the Colab badges point at your fork.
+
+================================================================================
+End of kit. Delete this file or keep it as a maintainer reference.
+================================================================================

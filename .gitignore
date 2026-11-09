@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Model / OCR outputs
+# (The notebooks and CLI write here; keep them out of git.)
+input/
+output/
+output*/
+*.raw.txt
+*.meta.json
+run_summary.json
+.work/
+unlimited_ocr_output_*.zip
+*.assets/
+
+# Hugging Face / model caches
+.cache/
+huggingface/
+models/
+
+# SGLang
+.venv-uocr/
+wheel/
+sglang_server.log
+sglang_server.pid
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local credentials
+.env
+.env.*
+!.env.example

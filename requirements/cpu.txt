@@ -1,0 +1,6 @@
+# CPU-only install (experimental; 16 GB+ RAM recommended).
+# Install the CPU PyTorch wheel first:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+-r base.txt
+torch
+torchvision

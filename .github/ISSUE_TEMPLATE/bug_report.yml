@@ -1,0 +1,100 @@
+name: Bug report
+description: Something is broken in a notebook, the CLI, or the docs.
+title: "[bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please include enough detail that we can reproduce
+        the failure without guessing. Run `python scripts/check_environment.py`
+        and paste the output if possible.
+
+  - type: dropdown
+    id: notebook
+    attributes:
+      label: Which notebook / entry point?
+      options:
+        - Colab T4
+        - Colab L4 / A100
+        - Local NVIDIA GPU
+        - Local CPU
+        - Apple Silicon
+        - SGLang Server
+        - scripts/ocr_pdf.py
+        - Documentation / other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: When did it fail?
+      options:
+        - Dependency install
+        - Model download
+        - Model load
+        - Inference / processing
+        - Post-processing / output
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Full traceback / error output
+      description: Paste the complete error, not just the last line.
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: "Ubuntu 24.04 / Windows 11 / macOS 15 / Colab"
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.10.14"
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: GPU / CPU and memory
+      placeholder: "RTX 3060 12 GB / Apple M2 16 GB / Colab T4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings you changed
+      description: MODE, CHUNK_PAGES, DPI, MAX_PAGES, flags, etc.
+      placeholder: "MODE=base, CHUNK_PAGES=1, DPI=200"
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment check output
+      description: Output of `python scripts/check_environment.py`
+      render: shell
+    validations:
+      required: false

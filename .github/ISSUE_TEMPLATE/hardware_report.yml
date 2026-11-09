@@ -1,0 +1,76 @@
+name: Hardware report
+description: Tell us whether a notebook works on your machine.
+title: "[hardware] "
+labels: ["hardware-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Real-world reports keep the support table honest. Please report both
+        successes and failures. A short report is fine.
+
+  - type: dropdown
+    id: result
+    attributes:
+      label: Did it work?
+      options:
+        - "Yes, it worked"
+        - "Yes, but with settings changes"
+        - "No, it failed"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: notebook
+    attributes:
+      label: Notebook / entry point
+      options:
+        - Colab T4
+        - Colab L4 / A100
+        - Local NVIDIA GPU
+        - Local CPU
+        - Apple Silicon
+        - SGLang Server
+        - scripts/ocr_pdf.py
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      placeholder: "RTX 4090 24 GB / Apple M3 Pro 36 GB / Ryzen 7 7840U 32 GB"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS and driver
+      placeholder: "Ubuntu 24.04, NVIDIA 550 / Windows 11, 566.36 / macOS 15.2"
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: Python / PyTorch / transformers
+      placeholder: "3.11, torch 2.6.0+cu124, transformers 4.52.1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings that worked (or failed)
+      placeholder: "MODE=auto, CHUNK_PAGES=8, DPI=250, max 40 pages"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Speed, peak VRAM, pages per minute, errors, anything surprising.
+    validations:
+      required: false

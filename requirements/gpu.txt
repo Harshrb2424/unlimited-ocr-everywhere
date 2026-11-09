@@ -1,0 +1,8 @@
+# NVIDIA GPU / Colab dependencies.
+#
+# Install a CUDA PyTorch wheel that matches your driver first, for example:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+# Colab already has PyTorch, so you can skip that line there.
+-r base.txt
+torch
+torchvision

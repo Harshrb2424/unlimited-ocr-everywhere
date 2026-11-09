@@ -1,0 +1,3 @@
+# Google Colab dependencies. Colab already provides a CUDA-enabled PyTorch,
+# so this file intentionally does not pin torch.
+-r base.txt

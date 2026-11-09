@@ -1,0 +1,13 @@
+# Core dependencies shared by every notebook and the CLI.
+# PyTorch is listed separately because the right wheel depends on your hardware.
+transformers==4.52.1
+huggingface-hub==0.36.0
+tokenizers==0.21.4
+accelerate==1.6.0
+addict==2.4.0
+einops==0.8.2
+easydict==1.13
+pymupdf==1.27.2.2
+pillow
+sentencepiece
+requests

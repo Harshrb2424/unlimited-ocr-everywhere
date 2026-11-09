@@ -1,0 +1,42 @@
+name: Notebook / tier request
+description: Suggest a new hardware tier or notebook.
+title: "[tier] "
+labels: ["enhancement", "notebook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good tier requests name the hardware, the runtime, and the constraint
+        that makes the existing notebooks a bad fit.
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware / platform
+      placeholder: "Kaggle T4, AMD ROCm, Intel Arc, Docker, RunPod template"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do the existing notebooks not fit?
+      description: Which notebook did you try, and what failed or felt wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Memory, OS, driver, or runtime constraints
+      placeholder: "8 GB VRAM, Windows, no admin rights, ROCm 6.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What should the notebook do?
+      description: Defaults, mode, chunk size, install steps, warnings.
+    validations:
+      required: false

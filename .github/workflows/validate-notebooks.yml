@@ -1,0 +1,39 @@
+name: Validate notebooks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate notebook JSON and Python syntax
+        run: python tools/validate_notebooks.py
+
+      - name: Regenerate notebooks from templates
+        run: python tools/build_notebooks.py
+
+      - name: Ensure generated notebooks are committed
+        run: git diff --exit-code -- notebooks/
+
+      - name: Warn about unpublished placeholders
+        run: |
+          if grep -R -n -E "__OWNER__|__REPO__" \
+            --include="*.md" --include="*.ipynb" --include="*.cff" .; then
+            echo "::warning::Repository still contains __OWNER__/__REPO__ placeholders. Run tools/personalize.py before publishing."
+          else
+            echo "Personalization placeholders are resolved."
+          fi
