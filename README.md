@@ -72,7 +72,7 @@ layout stream: titles, paragraphs, tables, formulas, figures and bounding boxes.
 1. Render every PDF page to a JPEG (or accept PNG/JPG/TIFF input directly).
 2. Send one or more pages to the model, using cross-page context when possible.
 3. Convert the raw layout stream to Markdown with the upstream post-processor.
-4. Crop figures and tables into an `assets/` folder and rewrite the Markdown links.
+4. Crop figures into an `assets/` folder and rewrite the Markdown links.
 5. Write metadata and a batch summary so long runs are easy to audit.
 
 ```
