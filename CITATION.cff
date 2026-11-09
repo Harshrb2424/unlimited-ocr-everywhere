@@ -9,8 +9,8 @@ authors:
   - name: "Unlimited OCR Everywhere contributors"
 type: software
 license: MIT
-repository-code: "https://github.com/__OWNER__/__REPO__"
-url: "https://github.com/__OWNER__/__REPO__"
+repository-code: "https://github.com/Harshrb2424/unlimited-ocr-everywhere"
+url: "https://github.com/Harshrb2424/unlimited-ocr-everywhere"
 keywords:
   - ocr
   - document parsing

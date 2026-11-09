@@ -18,8 +18,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = Path(__file__).resolve().parent / "templates"
 NOTEBOOKS = ROOT / "notebooks"
-OWNER = "__OWNER__"
-REPO = "__REPO__"
+OWNER = "Harshrb2424"
+REPO = "unlimited-ocr-everywhere"
 REPO_URL = f"https://github.com/{OWNER}/{REPO}"
 
 

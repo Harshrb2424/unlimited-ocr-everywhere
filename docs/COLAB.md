@@ -128,8 +128,8 @@ download `output/` manually, or run the ZIP cell again.
 The notebooks are easier, but you can run the CLI:
 
 ```python
-!git clone https://github.com/__OWNER__/__REPO__.git
-%cd __REPO__
+!git clone https://github.com/Harshrb2424/unlimited-ocr-everywhere.git
+%cd unlimited-ocr-everywhere
 !python scripts/ocr_pdf.py --input /content/input --output /content/output --zip
 ```
 

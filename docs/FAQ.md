@@ -128,12 +128,12 @@ real-world success/failure data keeps the support table honest.
 
 ### How do I personalize the Colab badges and links?
 
-The repo ships with `__OWNER__` / `__REPO__` placeholders so it can be forked
+The repo ships with `Harshrb2424` / `unlimited-ocr-everywhere` placeholders so it can be forked
 without hard-coding someone else's account. If a badge or absolute link still
 shows a placeholder, run:
 
 ```bash
-python tools/personalize.py --owner YOUR_GITHUB_USERNAME --repo unlimited-ocr-everywhere
+python tools/personalize.py --owner Harshrb2424 --repo unlimited-ocr-everywhere
 ```
 
 Then commit. The Colab badges and absolute links will point at your fork.

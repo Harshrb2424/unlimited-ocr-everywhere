@@ -22,8 +22,8 @@ environment for this project.
 ## 1. Clone the repo
 
 ```bash
-git clone https://github.com/__OWNER__/__REPO__.git
-cd __REPO__
+git clone https://github.com/Harshrb2424/unlimited-ocr-everywhere.git
+cd unlimited-ocr-everywhere
 ```
 
 If you only want a notebook, you can download the `.ipynb` directly and skip

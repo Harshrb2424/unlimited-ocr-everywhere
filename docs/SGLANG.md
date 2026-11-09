@@ -23,7 +23,7 @@ integration. Use the wheel.
 ## Setup
 
 ```bash
-cd __REPO__
+cd unlimited-ocr-everywhere
 
 # uv creates an isolated Python 3.10 environment
 uv venv --python 3.10 .venv-uocr

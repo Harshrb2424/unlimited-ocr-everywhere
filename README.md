@@ -12,10 +12,10 @@
 </p>
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/__OWNER__/__REPO__/blob/main/notebooks/Unlimited_OCR_Colab_T4.ipynb">
+  <a href="https://colab.research.google.com/github/Harshrb2424/unlimited-ocr-everywhere/blob/main/notebooks/Unlimited_OCR_Colab_T4.ipynb">
     <img alt="Open T4 notebook in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />
   </a>
-  <a href="https://colab.research.google.com/github/__OWNER__/__REPO__/blob/main/notebooks/Unlimited_OCR_Colab_L4_A100.ipynb">
+  <a href="https://colab.research.google.com/github/Harshrb2424/unlimited-ocr-everywhere/blob/main/notebooks/Unlimited_OCR_Colab_L4_A100.ipynb">
     <img alt="Open L4/A100 notebook in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />
   </a>
   <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%E2%80%933.13-3776ab?logo=python&logoColor=white" />
@@ -35,8 +35,8 @@
 
 | Notebook | Hardware | Memory | What it is good for |
 |---|---|---|---|
-| [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__OWNER__/__REPO__/blob/main/notebooks/Unlimited_OCR_Colab_T4.ipynb) <br/> [**Colab T4**](notebooks/Unlimited_OCR_Colab_T4.ipynb) | Free Google Colab, Tesla T4 | 16 GB VRAM | **Start here.** Zero install. One page per request, float16. |
-| [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/__OWNER__/__REPO__/blob/main/notebooks/Unlimited_OCR_Colab_L4_A100.ipynb) <br/> [**Colab L4 / A100**](notebooks/Unlimited_OCR_Colab_L4_A100.ipynb) | Colab Pro, L4 or A100 | 24–80 GB VRAM | BF16, larger chunks, long documents. |
+| [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Harshrb2424/unlimited-ocr-everywhere/blob/main/notebooks/Unlimited_OCR_Colab_T4.ipynb) <br/> [**Colab T4**](notebooks/Unlimited_OCR_Colab_T4.ipynb) | Free Google Colab, Tesla T4 | 16 GB VRAM | **Start here.** Zero install. One page per request, float16. |
+| [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Harshrb2424/unlimited-ocr-everywhere/blob/main/notebooks/Unlimited_OCR_Colab_L4_A100.ipynb) <br/> [**Colab L4 / A100**](notebooks/Unlimited_OCR_Colab_L4_A100.ipynb) | Colab Pro, L4 or A100 | 24–80 GB VRAM | BF16, larger chunks, long documents. |
 | [**Local NVIDIA GPU**](notebooks/Unlimited_OCR_Local_GPU.ipynb) | Windows or Linux PC, RTX 3060 12 GB and up | 12 GB+ VRAM | Your files, your GPU, no upload limits. |
 | [**Local CPU**](notebooks/Unlimited_OCR_Local_CPU.ipynb) | Any x86-64 / ARM64 laptop | 16 GB+ RAM | A few pages without a GPU. 🧪 Experimental. |
 | [**Apple Silicon**](notebooks/Unlimited_OCR_Apple_Silicon.ipynb) | M1 / M2 / M3 / M4 Mac | 16 GB+ unified | Local Mac inference via MPS. 🧪 Experimental. |
@@ -47,12 +47,12 @@
 </p>
 
 **Direct downloads:**
-[T4](https://github.com/__OWNER__/__REPO__/raw/main/notebooks/Unlimited_OCR_Colab_T4.ipynb) ·
-[L4/A100](https://github.com/__OWNER__/__REPO__/raw/main/notebooks/Unlimited_OCR_Colab_L4_A100.ipynb) ·
-[Local GPU](https://github.com/__OWNER__/__REPO__/raw/main/notebooks/Unlimited_OCR_Local_GPU.ipynb) ·
-[Local CPU](https://github.com/__OWNER__/__REPO__/raw/main/notebooks/Unlimited_OCR_Local_CPU.ipynb) ·
-[Apple Silicon](https://github.com/__OWNER__/__REPO__/raw/main/notebooks/Unlimited_OCR_Apple_Silicon.ipynb) ·
-[SGLang](https://github.com/__OWNER__/__REPO__/raw/main/notebooks/Unlimited_OCR_SGLang_Server.ipynb)
+[T4](https://github.com/Harshrb2424/unlimited-ocr-everywhere/raw/main/notebooks/Unlimited_OCR_Colab_T4.ipynb) ·
+[L4/A100](https://github.com/Harshrb2424/unlimited-ocr-everywhere/raw/main/notebooks/Unlimited_OCR_Colab_L4_A100.ipynb) ·
+[Local GPU](https://github.com/Harshrb2424/unlimited-ocr-everywhere/raw/main/notebooks/Unlimited_OCR_Local_GPU.ipynb) ·
+[Local CPU](https://github.com/Harshrb2424/unlimited-ocr-everywhere/raw/main/notebooks/Unlimited_OCR_Local_CPU.ipynb) ·
+[Apple Silicon](https://github.com/Harshrb2424/unlimited-ocr-everywhere/raw/main/notebooks/Unlimited_OCR_Apple_Silicon.ipynb) ·
+[SGLang](https://github.com/Harshrb2424/unlimited-ocr-everywhere/raw/main/notebooks/Unlimited_OCR_SGLang_Server.ipynb)
 
 ### Which tier should I use?
 
@@ -125,8 +125,8 @@ The first run downloads about **7 GB** of model weights. Expect 10–20 minutes 
 ## Quick start: local NVIDIA GPU
 
 ```bash
-git clone https://github.com/__OWNER__/__REPO__.git
-cd __REPO__
+git clone https://github.com/Harshrb2424/unlimited-ocr-everywhere.git
+cd unlimited-ocr-everywhere
 
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
@@ -417,7 +417,7 @@ or move to L4/A100/SGLang for long documents.
 ├── tools/
 │   ├── build_notebooks.py      # regenerates all notebooks from templates
 │   ├── validate_notebooks.py   # CI: JSON + Python syntax check
-│   └── personalize.py          # replaces __OWNER__ / __REPO__ links
+│   └── personalize.py          # replaces Harshrb2424 / unlimited-ocr-everywhere links
 └── .github/                    # issue templates, PR template, CI
 ```
 
@@ -428,7 +428,7 @@ or move to L4/A100/SGLang for long documents.
 If the Colab badges or absolute links still point at a placeholder, run this once from the repo root:
 
 ```bash
-python tools/personalize.py --owner YOUR_GITHUB_USERNAME --repo unlimited-ocr-everywhere
+python tools/personalize.py --owner Harshrb2424 --repo unlimited-ocr-everywhere
 ```
 
 Then commit the result. The script updates the README, all six notebooks, `CITATION.cff` and the docs.

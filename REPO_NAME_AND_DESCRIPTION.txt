@@ -96,7 +96,7 @@ so "unlimited-ocr" and "pdf-to-markdown" are the highest-value ones.
 --------------------------------------------------------------------------------
 5. WEBSITE FIELD (optional)
 --------------------------------------------------------------------------------
-https://github.com/YOUR_GITHUB_USERNAME/unlimited-ocr-everywhere#-pick-your-notebook
+https://github.com/Harshrb2424/unlimited-ocr-everywhere#-pick-your-notebook
 
 Or, if you publish a short landing page:
 https://YOUR_DOMAIN/unlimited-ocr-everywhere
@@ -336,7 +336,7 @@ Long-tail:
 --------------------------------------------------------------------------------
 After creating the GitHub repo, run:
 
-  python tools/personalize.py --owner YOUR_GITHUB_USERNAME --repo unlimited-ocr-everywhere
+  python tools/personalize.py --owner Harshrb2424 --repo unlimited-ocr-everywhere
 
 This replaces every __OWNER__ / __REPO__ placeholder in the README, notebooks,
 CITATION.cff and docs, so the Colab badges point at your fork.
