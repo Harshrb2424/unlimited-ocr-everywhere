@@ -2,5 +2,5 @@
 # The server itself runs in a separate Python 3.10 venv created by the notebook,
 # because the customized SGLang wheel must match that environment.
 requests
-pymupdf==1.27.2.2
+pymupdf==2.1
 pillow

@@ -7,7 +7,7 @@ accelerate==1.6.0
 addict==2.4.0
 einops==0.8.2
 easydict==1.13
-pymupdf==1.27.2.2
+pymupdf==2.1
 pillow
 sentencepiece
 requests
